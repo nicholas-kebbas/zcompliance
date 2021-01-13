@@ -21,11 +21,8 @@ A list of other roles hosted on Galaxy should go here, plus any details in regar
 Example Playbook
 ----------------
 
-Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
-
-    - hosts: servers
-      roles:
-         - { role: username.rolename, x: 42 }
+1. Create "hosts" file and add host information
+2. Run this command `ansible-playbook -i hosts -u <username> --ask-pass zfacts.yml inactivity_timeout.yml password_history.yml password_min.yml zfacts.yml`
 
 License
 -------
