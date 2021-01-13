@@ -5,6 +5,7 @@ Basic Role for running tasks on z/OS systems
 
 Requirements
 ------------
+None
 
 Role Variables
 --------------
@@ -12,7 +13,7 @@ User will need to create and populate hosts file
 
 Dependencies
 ------------
-
+None
 
 Example Playbook
 ----------------
@@ -27,4 +28,15 @@ BSD
 
 Author Information
 ------------------
+Abhishek Bhatt
+Archana Yadawa
+Jason Kahn
+Nick Kebbas
+Mohinish Daswani
+
+Technical Mentor
+Andrew Hicks
+
+
+
 
