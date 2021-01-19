@@ -15,6 +15,16 @@ Dependencies
 ------------
 None
 
+Compliance Protocols
+--------------------
+
+| Fact | PCI DSS | Short Description | LongDescription | Check |
+|-|-|-|-|-|
+| `password_history` | 8.2.5 | Specifies the number of previous passwords and password phrases | Specifies the number (1-32) of previous passwords and password phrases that RACF saves for each user and compares it with each new intended value. | 8 or greater |
+| `password_interval` | 8.2.4 | Control change intervals for passwords and password phrases | Control change intervals for passwords and password phrases | Less than or equal to 90 |
+| `password_lockout` | 8.1.6, 8.1.7 | Specifies the number of consecutive unsuccessful attempts to access the system | Specifies the number of consecutive unsuccessful attempts (1-255) to access the system (using an incorrect password or password phrase) before RACF revokes the user ID on the next unsuccessful attempt. | 4 tries or less |
+| `password_minimum_change_interval` | TBD | Specifies the number of days that must pass between a user's password and password phrase changes. | Specifies the number of days that must pass between a user's password and password phrase changes. Acceptable values are 0-254 (days), providing the number of days between changes does not exceed the maximum change interval specified by the INTERVAL keyword. For example, if you specify 5 for your MINCHANGE number, users cannot change their passwords more than once in 5 days, nor can they change their password phrases (if assigned) more than once in 5 days. | 1 (I think this should be 0, but the presentation says 1) |
+
 Example Playbook
 ----------------
 
